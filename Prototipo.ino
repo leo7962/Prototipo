@@ -1,7 +1,7 @@
-#include <ESP8266WiFi.h>
-#include <WiFiClient.h>
-#include <mongocxx/client.hpp>
-#include <mongocxx/instance.hpp>
+ #include <ESP8266WiFi.h>
+// #include <WiFiClient.h>
+// #include <mongocxx/client.hpp>
+// #include <mongocxx/instance.hpp>
 
 //#include <WiFiClientSecure.h>
 
@@ -15,12 +15,12 @@ int contconexion = 0;
 const char *ssid = "UMB_Docentes";
 const char *password = "Docentes2017!";
 
-mongocxx::instance inst;
-mongocxx::client conn
-{
-  mongocxx::uri { "mongodb+srv://Leo7962:XperiaX7962@clusterumb-8hedx.gcp.mongodb.net/test?retryWrites=true" }
-}
-mongocxx::database db = conn["test"];
+// mongocxx::instance inst;
+// mongocxx::client conn
+// {
+//   mongocxx::uri { "mongodb+srv://Leo7962:XperiaX7962@clusterumb-8hedx.gcp.mongodb.net/test?retryWrites=true" }
+// }
+// mongocxx::database db = conn["test"];
 
 try
 {
